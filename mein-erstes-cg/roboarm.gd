@@ -9,7 +9,11 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	print(delta)
+	if Input.is_action_pressed("arm_right"):
+		$Base/Außenplat/Innenplat.rotate_y(deg_to_rad(oberarm_speed) * delta)
+	if Input.is_action_pressed("arm_left"):
+		$Base/Außenplat/Innenplat.rotate_y(deg_to_rad(-oberarm_speed) * delta)
 	if Input.is_action_pressed("upper_arm_up"):
-		$Arm/Obenarm.rotate_x(deg_to_rad(oberarm_speed) * delta)
+		$Base/Außenplat/Innenplat/Untengel/Oben.rotate_z(deg_to_rad(oberarm_speed) * delta)
 	if Input.is_action_pressed("upper_arm_down"):
-		$Arm/Obenarm.rotate_x(deg_to_rad(-oberarm_speed) * delta)
+		$Base/Außenplat/Innenplat/Untengel/Oben.rotate_z(deg_to_rad(-oberarm_speed) * delta)
