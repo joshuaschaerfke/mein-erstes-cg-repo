@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://do7t0377s0b3f"]
 
-[ext_resource type="PackedScene" uid="uid://by44jlpgeb7ml" path="res://BlauWürfel.glb" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://7ee3tykdw2qe" path="res://Roboarm.blend" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://cifvmscr2ubm6" path="res://roboarm.gd" id="3_1bvp3"]
 
@@ -15,8 +14,6 @@ sky_material = SubResource("ProceduralSkyMaterial_h2yge")
 background_mode = 2
 sky = SubResource("Sky_1bvp3")
 tonemap_mode = 2
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_0xm2m"]
 
 [node name="Main" type="Node3D" unique_id=477977984]
 
@@ -39,13 +36,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 operation = 2
 radial_segments = 24
 rings = 12
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=933582345]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2913929, 3.8023095)
-mesh = SubResource("CapsuleMesh_0xm2m")
-
-[node name="BlauWürfel" parent="." unique_id=314383488 instance=ExtResource("1_ig7tw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.236765, 0, 1.6053451)
 
 [node name="Roboarm" parent="." unique_id=482949200 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4524512, 0, -2.2795851)
