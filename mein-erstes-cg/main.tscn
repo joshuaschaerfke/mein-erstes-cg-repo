@@ -47,7 +47,7 @@ mesh = SubResource("CapsuleMesh_0xm2m")
 [node name="BlauWürfel" parent="." unique_id=314383488 instance=ExtResource("1_ig7tw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.236765, 0, 1.6053451)
 
-[node name="Roboarm" parent="." unique_id=1860446683 instance=ExtResource("2_h2yge")]
+[node name="Roboarm" parent="." unique_id=482949200 instance=ExtResource("2_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4524512, 0, -2.2795851)
 script = ExtResource("3_1bvp3")
 
